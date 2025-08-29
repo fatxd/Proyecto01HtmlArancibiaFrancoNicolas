@@ -4,10 +4,11 @@
 
     grid-template-areas:
         "header header"
+        "article article"
         "nav main"
         "footer footer";
 
-    grid-template-rows: 80px 1fr 120px;
+    grid-template-rows: 80px 50px 1fr 120px;
     grid-template-columns: 200px 1fr;
 
     gap: 10px;
@@ -28,6 +29,17 @@
 
 .header-left {
     margin: 20px;
+}
+.article {
+    grid-area: article;
+    border: 1px black solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.article a {
+    margin: 10px;
+    text-decoration: none;
 }
 
 .nav {
